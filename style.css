@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+}
+
+h4, h5 {
+    font-family: "Segoe UI", sans-serif;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+body {
+    height: inherit;
+    background-color: #414040;
+    position: relative;
+}
+
+.container {
+    height: inherit;
+}
+
+.search-container {
+    /*border: 1px dotted #BBB;*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+.search-box {
+    border: 3px solid #BBB;
+    border-radius: 3rem;
+    overflow: hidden;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search_input {
+    color: #95989A;
+    background: inherit;
+    border: 1px solid transparent;
+}
+
+.random-article {
+    display: inline-block;
+    font-size: 0.8rem;
+    position: relative;
+    top: 0.5rem;
+}
+.random-article p {
+    color: #95989A;
+}
+.random-article a:hover {
+    text-decoration: none;
+}
+
+.result-box {
+    border: 2px solid #BBBBBB;
+    margin-bottom: 1rem;
+    min-height: 6rem;
+    max-height: 6rem;
+    opacity: 0.3;
+    padding: 0.5rem 0 0 0.5rem;
+    overflow: hidden;
+}
+
+.result-box h4, .result-box h5 {
+    color: #FFF;
+}
+
