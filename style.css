@@ -70,3 +70,17 @@ body {
     color: #FFF;
 }
 
+footer{
+    margin-top: 2rem;
+    display: none;
+}
+
+footer p, footer a {
+    color: #95989A;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #EEE;
+}
+

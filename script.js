@@ -108,5 +108,6 @@ function renderResults () {
             "margin-bottom": "1rem"
         }, 100);
     });
+    $("footer").css({"display": "inline"})
 }
 
