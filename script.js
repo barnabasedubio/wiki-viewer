@@ -45,6 +45,8 @@ function getQueryResults() {
         queryResultTitles = data[1];
         queryResultDescriptions = data[2];
         queryResultLinks = data[3];
+        // if no query result exists, display an alert
+        if (queryResultLinks.length === 0) alert("No results found for " + query + "  :(");
         // fadeIn/fadeOut animations
         $("#query_results").fadeOut(200, function() {
             $(this).html("");
@@ -53,18 +55,6 @@ function getQueryResults() {
         });
     });
     notFirstSearch = true;
-}
-
-// this function gets a string as input and returns its truncated version
-function truncate(str, len) {
-    if (len >= str.length) return str;
-    var array = str.split("");
-    var newWord = "";
-    for (var i = 0; i < len-3; i++) {
-        newWord += array[i];
-    }
-    newWord += "...";
-    return newWord;
 }
 
 // create a new div for every result and render it on the page
@@ -109,5 +99,17 @@ function renderResults () {
         }, 100);
     });
     $("footer").css({"display": "inline"})
+}
+
+// this function gets a string as input and returns its truncated version
+function truncate(str, len) {
+    if (len >= str.length) return str;
+    var array = str.split("");
+    var newWord = "";
+    for (var i = 0; i < len-3; i++) {
+        newWord += array[i];
+    }
+    newWord += "...";
+    return newWord;
 }
 
